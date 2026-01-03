@@ -1,0 +1,64 @@
+body {
+  background-color: #3e592a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+}
+
+#experience {
+  background-color: #ede0d4;
+}
+
+.card-title1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-text1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.link-company {
+  text-decoration: none;
+  color: white;
+}
+
+.link-company:hover {
+  color: #b08968;
+  transition: 0.3s;
+}
+
+#project {
+  background-color: #efe7df;
+}
+
+#contact {
+  background-color: #ede0d4;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+nav {
+  background-color: #3e592a;
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav .container ul li {
+  padding-left: 1rem;
+}
+
+footer {
+  background-color: #b08968;
+}
+
+.btn {
+  background-color: #b08968;
+}
