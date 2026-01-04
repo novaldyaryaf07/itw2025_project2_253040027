@@ -3,23 +3,42 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #f5f6e9;
   overflow-x: hidden;
 }
 
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 7rem;
 }
 
-#experience {
-  background-color: #ede0d4;
+#about h2 {
+  font-weight: 800;
 }
 
-.card-title1 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+#location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f5f6e9;
+  color: #3e592a;
 }
 
-.card-text1 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+#location h2 {
+  font-weight: 800;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: #f5f6e9;
+  transition: 0.5s;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.card-text a:hover {
+  color: #3e592a;
 }
 
 .link-company {
@@ -32,12 +51,21 @@ body {
   transition: 0.3s;
 }
 
-#project {
-  background-color: #efe7df;
+#menu {
+  background-color: #3e592a;
+}
+
+#menu h2 {
+  font-weight: 800;
 }
 
 #contact {
-  background-color: #ede0d4;
+  background-color: #f5f6e9;
+  color: #3e592a;
+}
+
+#contact h2 {
+  font-weight: 800;
 }
 
 section {
@@ -56,9 +84,9 @@ nav .container ul li {
 }
 
 footer {
-  background-color: #b08968;
+  background-color: #3e592a;
 }
 
 .btn {
-  background-color: #b08968;
+  background-color: #3e592a;
 }
