@@ -6,6 +6,9 @@
     <title>UMO SETIABUDI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/vanilla-tilt.min.js" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Chewy -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/White.png" alt="Logo UMO" width="120" height="auto" />
+          <img src="img/White.png" alt="Logo UMO" width="100" height="auto" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,6 +44,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfk_A1b_D2Ay46cseNhcPTIX1JTQHRbp-g66vTkll_ZzRtEpg/viewform?pli=1" target="_blank">Umopini</a>
             </li>
           </ul>
         </div>
@@ -89,10 +95,10 @@
         </div>
       </div>
       <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/Profile Picture 2.png" alt="profile" width="350px" />
         </div>
-        <div class="col-md-5 mt-5">
+        <div class="col-md-5 mt-5" data-aos="fade-left" data-aos-duration="2000">
           <p>
             Di UMO, kesegaran bukan hanya janji, tapi komitmen. Kami menyajikan makanan dan minuman segar yang diproses dengan standar kebersihan tinggi dan perhatian pada kualitas, agar setiap pelanggan merasakan rasa yang ringan, alami,
             dan menyegarkan.
@@ -118,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="card text-bg-dark" style="width: 450px">
+      <div class="card text-bg-dark" style="width: 450px" data-aos="fade-right" data-aos-duration="2000">
         <img src="img/Tampilan Maps.png" class="card-img" alt="view-toko" />
         <div class="card-img-overlay">
           <h5 class="card-title">UMO SETIABUDI</h5>
@@ -126,13 +132,13 @@
           <p class="card-text"><small>Fresh served daily</small></p>
         </div>
       </div>
-      <div class="card text-bg-dark" style="width: 450px">
+      <div class="card text-bg-dark" style="width: 450px" data-aos="fade-left" data-aos-duration="2000">
         <img src="img/Maps Deploy.png" class="card-img" alt="view-maps" />
         <div class="card-img-overlay">
           <h5 class="card-title">Our Location</h5>
           <p class="card-text">Berlokasi di kawasan Setiabudi, Bandung. Mudah dijangkau dan siap menjadi tempat singgah untuk menikmati sajian segar UMO.</p>
           <p class="card-text">
-            <small><a href="https://maps.app.goo.gl/PM2WuR3Y1XGQDy5r9">Lihat di Google Maps</a></small>
+            <small><a href="https://maps.app.goo.gl/PM2WuR3Y1XGQDy5r9" target="_blank">Lihat di Google Maps</a></small>
           </p>
         </div>
       </div>
@@ -155,41 +161,26 @@
             <h2>Our Menu</h2>
           </div>
         </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="menu-box">
+              <h4 class="menu-name">Sticky Milk</h4>
+              <img src="img/_DSC0054-removebg-preview.png" alt="sticky milk" class="sticky-milk-img" style="width: 200px" />
+              <a href="#" class="btn btn-dark menu-detail-button">Order Now</a>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="menu-box">
+              <h4 class="menu-name">Blend Milk</h4>
+              <img src="img/_DSC0093-removebg-preview.png" alt="sticky milk" class="sticky-milk-img" />
+              <a href="#" class="btn btn-dark menu-detail-button">Order Now</a>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="menu-box">
+              <h4 class="menu-name">Cilok Goang</h4>
+              <img src="img/_DSC0071__1_-removebg-preview.png" alt="sticky milk" class="sticky-milk-img" />
+              <a href="#" class="btn btn-dark menu-detail-button">Order Now</a>
             </div>
           </div>
         </div>
@@ -215,20 +206,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="umo-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="text" aria-describedby="Name" />
+                <input type="text" class="form-control" id="text" aria-describedby="Name" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn text-white">Kirim</button>
+              <button type="submit" class="btn text-dark btn-kirim">Kirim</button>
+              <button class="btn btn-loading d-none" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
             </form>
           </div>
         </div>
@@ -250,6 +249,44 @@
     <!-- akhir footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".menu-box "), {
+        max: 25,
+        speed: 1000,
+        glare: true,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbx1UEvW8NDJ1o0A0sIsepTTnyQX9PX9mXOo_zOYKXNm8mcOm-WhCLeEGCW08BHfmZXFsA/exec";
+      const form = document.forms["umo-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

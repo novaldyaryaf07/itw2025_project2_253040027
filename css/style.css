@@ -1,14 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #3e592a;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #f5f6e9;
+  color: #b08968;
   overflow-x: hidden;
 }
 
 .jumbotron {
   padding-top: 7rem;
+}
+
+#about {
+  color: #f5f6e9;
 }
 
 #about h2 {
@@ -18,7 +33,7 @@ body {
 #location {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #f5f6e9;
   color: #3e592a;
 }
@@ -53,10 +68,101 @@ body {
 
 #menu {
   background-color: #3e592a;
+  color: #f5f6e9;
 }
 
 #menu h2 {
   font-weight: 800;
+}
+
+/* our menu section */
+
+.menu-box {
+  position: relative;
+  background-color: #f5f6e9;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.menu-box::before {
+  content: "UMO";
+  position: absolute;
+  color: #3e592a;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu-box:hover::before {
+  opacity: 0.2;
+}
+
+.menu-box::after {
+  content: "MENU";
+  position: absolute;
+  color: #3e592a;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu-box:hover::after {
+  opacity: 0.2;
+}
+
+.menu-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #3e592a;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.menu-box:hover .menu-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.menu-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu-box:hover .menu-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.sticky-milk-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+.menu-box:hover .sticky-milk-img {
+  transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
 }
 
 #contact {
@@ -81,6 +187,7 @@ nav {
 
 nav .container ul li {
   padding-left: 1rem;
+  font-size: 1em;
 }
 
 footer {
@@ -89,4 +196,10 @@ footer {
 
 .btn {
   background-color: #3e592a;
+}
+
+@media screen and (max-width: 576px) {
+  #location .card {
+    margin-bottom: 1.5rem;
+  }
 }
